@@ -31,7 +31,6 @@ export class GifsService {
 
     value = value.trim().toLowerCase();
     if (!this._historial.includes(value)) {
-      console.log(value);
       this._historial.unshift(value);
       localStorage.setItem('historial', JSON.stringify(this._historial));
     }
