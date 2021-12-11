@@ -13,6 +13,9 @@ export class SidebarComponent {
 
   constructor(private gifsService: GifsService) {}
 
-
+  buscar(value :string) {
+    console.log(value);
+    this.gifsService.addHistorial(value);
+  }
 
 }
